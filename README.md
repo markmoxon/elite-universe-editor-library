@@ -1,9 +1,10 @@
 # Source code library for the Elite Universe Editor
 
-This repository contains a source code library for the Elite Universe Editor. It contains code that is included in both versions:
+This repository contains a source code library for the Elite Universe Editor. It contains code that is common to all versions of the Universe Editor:
 
 * [BBC Master Elite Universe Editor](https://github.com/markmoxon/master-elite-universe-editor)
 * [6502 Second Processor Elite Universe Editor](https://github.com/markmoxon/6502sp-elite-universe-editor)
+* [Commodore 64 Elite Universe Editor](https://github.com/markmoxon/c64-elite-universe-editor)
 
 The library code is included in each of these repositories as a submodule.
 
@@ -17,6 +18,8 @@ BBC Master Elite was written by Ian Bell and David Braben and is copyright &copy
 
 The BBC Master code on this site has been reconstructed from a disassembly of the version released on [Ian Bell's personal website](http://www.elitehomepage.org/).
 
+Commodore 64 Elite was written by Ian Bell and David Braben and published by Firebird, and is copyright &copy; D. Braben and I. Bell 1985.
+
 The commentary is copyright &copy; Mark Moxon. Any misunderstandings or mistakes in the documentation are entirely my fault.
 
 Huge thanks are due to the original authors for not only creating such an important piece of my childhood, but also for releasing the source code for us to play with; to Paul Brink for his annotated disassembly; and to Kieran Connell for his [BeebAsm version](https://github.com/kieranhj/elite-beebasm), which I forked as the original basis for this project. You can find more information about this project in the [accompanying website's project page](https://www.bbcelite.com/about_site/about_this_project.html).
@@ -26,6 +29,8 @@ The following archives from Ian Bell's personal website form the basis for this 
 * [6502 Second Processor sources as a disc image](http://www.elitehomepage.org/archive/a/a5022201.zip)
 
 * [BBC Elite, Master version](http://www.elitehomepage.org/archive/a/b8020001.zip)
+
+The Commodore 64 game disks in this repository are very similar to those released on [Ian Bell's personal website](http://www.elitehomepage.org/), but to ensure accuracy to the released versions, I've used disk images from the [Commodore 64 Preservation Project](https://archive.org/details/C64_Preservation_Project_10th_Anniversary_Collection) (it turns out that the disk images on Ian Bell's site differ slightly from the official versions). The Commodore Plus/4 version is based on the disk image from Ian Bell's site.
 
 # A note on licences, copyright etc.
 
