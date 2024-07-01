@@ -141,7 +141,7 @@ ELIF _COMPACT
 
 ENDIF
 
- INCLUDE "1-source-files/main-sources/elite-universe-editor-macros.asm"
+ INCLUDE "library-elite-universe-editor/main-sources/elite-universe-editor-macros.asm"
 
 ELIF _C64_VERSION
 
