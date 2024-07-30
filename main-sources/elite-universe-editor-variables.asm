@@ -73,11 +73,11 @@ IF _6502SP_VERSION
 
 \ Game variables and labels
 
- currentSlot     = XSAV2 \ XSAV2 and YSAV2 are unused in the original game, so we
- repeatingKey    = YSAV2 \ can reuse them in the Universe Editor
+ currentSlot     = XSAV2    \ XSAV2 and YSAV2 are unused in the original game,
+ repeatingKey    = YSAV2    \ so we can reuse them in the Universe Editor
 
- shiftCtrl       = ECMA  \ ECMA is only used when the E.C.M. is active, so we can
-                        \ reuse it in the Universe Editor
+ shiftCtrl       = ECMA     \ ECMA is only used when the E.C.M. is active, so we
+                            \ can reuse it in the Universe Editor
 
 ELIF _MASTER_VERSION
 
@@ -125,19 +125,19 @@ ELIF _MASTER_VERSION
 
 \ Game variables and labels
 
- currentSlot     = &0000 \ &0000 and &0001 are unused in the original game, so we
- repeatingKey    = &0001 \ can reuse them in the Universe Editor
+ currentSlot     = &0000    \ &0000 and &0001 are unused in the original game,
+ repeatingKey    = &0001    \ so we can reuse them in the Universe Editor
 
- shiftCtrl       = ECMA  \ ECMA is only used when the E.C.M. is active, so we can
-                        \ reuse it in the Universe Editor
+ shiftCtrl       = ECMA     \ ECMA is only used when the E.C.M. is active, so we
+                            \ can reuse it in the Universe Editor
 
 IF _SNG47
 
- token8          = &A49E \ Token 8 in TKN1 ("{single cap}COMMANDER'S NAME? ")
+ token8          = &A49E    \ Token 8 in TKN1 ("{single cap}COMMANDER'S NAME? ")
 
 ELIF _COMPACT
 
- token8          = &A495 \ Token 8 in TKN1 ("{single cap}COMMANDER'S NAME? ")
+ token8          = &A495    \ Token 8 in TKN1 ("{single cap}COMMANDER'S NAME? ")
 
 ENDIF
 
@@ -177,9 +177,9 @@ ELIF _C64_VERSION
  key9            = $20
  key0            = $1D
 
- keyEscape       = $01   \ Quit editor = RUN/STOP
- keyCopy         = $0D   \ Duplicate ship = CLR/HOME
- keyLeftArrow    = $07   \ Switch to charts = "<-"
+ keyEscape       = $01  \ Quit editor = RUN/STOP
+ keyCopy         = $0D  \ Duplicate ship = CLR/HOME
+ keyLeftArrow    = $07  \ Switch to charts = "<-"
  keyLt           = $11
  keyAt           = $12
  keyGt           = $14
@@ -187,19 +187,19 @@ ELIF _C64_VERSION
  keyRight        = $3E
  keyReturn       = $3F
  keyDelete       = $40
- keyUp           = $41   \ Mapped to a spare byte on the end of key logger table
- keyLeft         = $42   \ Mapped to a spare byte on the end of key logger table
+ keyUp           = $41  \ Mapped to a spare byte on the end of key logger table
+ keyLeft         = $42  \ Mapped to a spare byte on the end of key logger table
 
- keyC64          = $03   \ Modifier keys
+ keyC64          = $03  \ Modifier keys
  keyCtrl         = $06
  keyShiftR       = $0C
  keyShiftL       = $31         
 
- f0              = $3C   \ Show front view = f1/f2 key
- f1              = $3B   \ Show rear view = f3/f4 key
- f2              = $3A   \ Show left view = f5/f7 key
- f3              = $3D   \ Show right view = f7/f8 key
- f4              = $35   \ Show the long-range chart = "4"
+ f0              = $3C  \ Show front view = f1/f2 key
+ f1              = $3B  \ Show rear view = f3/f4 key
+ f2              = $3A  \ Show left view = f5/f7 key
+ f3              = $3D  \ Show right view = f7/f8 key
+ f4              = $35  \ Show the long-range chart = "4"
 
 \ Game configuration variables
 
@@ -249,8 +249,8 @@ ELIF _C64_VERSION
  BETA            = $0063
  BET1            = $0064
  ECMA            = $0067
- shiftCtrl       = ECMA  \ ECMA is only used when the E.C.M. is active, so we can
-                        \ reuse it in the Universe Editor
+ shiftCtrl       = ECMA     \ ECMA is only used when the E.C.M. is active, so we
+                            \  can reuse it in the Universe Editor
  ALP1            = $0068
  ALP2            = $0069
  K               = $0077
@@ -268,18 +268,18 @@ ELIF _C64_VERSION
  QQ12            = $00A7
  RAT2            = $00B1
  T               = $00BB
- currentSlot     = $00FD \ New variable for Universe Editor
- repeatingKey    = $00FE \ New variable for Universe Editor
+ currentSlot     = $00FD    \ New variable for Universe Editor
+ repeatingKey    = $00FE    \ New variable for Universe Editor
 
  FRIN            = $0452
  MANY            = $045D
  JUNK            = $047F
- auto            = $0480 \ LDX #(de-auto) in PlayUniverse
+ auto            = $0480    \ LDX #(de-auto) in PlayUniverse
  CABTMP          = $0483
  VIEW            = $0486
  GNTMP           = $0488
  DLY             = $048B
- de              = $048C \ LDX #(de-auto) in PlayUniverse
+ de              = $048C    \ LDX #(de-auto) in PlayUniverse
  JSTX            = $048D
  JSTY            = $048E
  NAME            = $0491
@@ -303,8 +303,8 @@ ELIF _C64_VERSION
  QQ5             = $0502
  LSO             = $0580
  ALTIT           = $06F3
- token8          = &0E8D \ Token 8 in TKN1 ("{single cap}COMMANDER'S NAME? ")
- dashboardActive = $1D04 \ Unique to Commodore 64
+ token8          = &0E8D    \ Token 8 in TKN1 ("{single cap}COMMANDER'S NAME? ")
+ dashboardActive = $1D04    \ Unique to Commodore 64
  DTAPE           = $1D0E
 
  DETOK           = $2390
@@ -321,7 +321,7 @@ ELIF _C64_VERSION
  pr2             = $2E55
  BEEP            = $2FEE
  DIALS           = $2FF3
- PZW2            = $30BB \ STA PZW2-3 in ApplyMods/RevertMods
+ PZW2            = $30BB    \ STA PZW2-3 in ApplyMods/RevertMods
  GINF            = $3E87
  ping            = $3E95
  DELAY           = $3EA1
@@ -333,7 +333,7 @@ ELIF _C64_VERSION
  BAY2            = $6DBF
  gnum            = $6DC9
  TT111           = $70AB
- G1              = $71E8 \ JSR G1-13 in DrawCharts
+ G1              = $71E8    \ JSR G1-13 in DrawCharts
  zZ              = $71F2
  jmp             = $7217
  ee3             = $7224
@@ -342,14 +342,14 @@ ELIF _C64_VERSION
  TT162           = $72C5
  TT114           = $7452
  getzp           = $784F
- DOEXP           = $7866 \ STA DOEXP in ApplyExplosionMod/RevertExplosionMod
+ DOEXP           = $7866    \ STA DOEXP in ApplyExplosionMod/RevertExplosionMod
  PTCLS           = $78D6
  SOLAR           = $7AC2
  NWSTARS         = $7AF3
  WPSHPS          = $7B1A
- WS1             = $7B41 \ STA WS1-3 in ApplyMods/RevertMods
+ WS1             = $7B41    \ STA WS1-3 in ApplyMods/RevertMods
  SP2             = $7BAB
- NWSPS           = $7C24 \ JSR NWSPS+3 in SwapStationSun
+ NWSPS           = $7C24    \ JSR NWSPS+3 in SwapStationSun
  NWSHP           = $7C6B
  NwS1            = $7D03
  WPLS            = $80FF
@@ -360,28 +360,28 @@ ELIF _C64_VERSION
  KILLSHP         = $82F3
  RESET           = $83CA
  RES2            = $83DF
- yu              = $8437 \ STA yu+3 in PlayUniverse
+ yu              = $8437    \ STA yu+3 in PlayUniverse
  ZINF            = $8447
  msblob          = $845C
- SAL8            = $846C \ STY SAL8+1 in UpdateDashboard
+ SAL8            = $846C    \ STY SAL8+1 in UpdateDashboard
  TT100           = $84ED
- TT102           = $86B1 \ JSR TT102+7 in DrawCharts
- TT92            = $86D0 \ STA TT92-7 in ApplyMods/RevertMods
- NWDAV5          = $872C \ LDA #NWDAV5-TT92+6 in ApplyMods
+ TT102           = $86B1    \ JSR TT102+7 in DrawCharts
+ TT92            = $86D0    \ STA TT92-7 in ApplyMods/RevertMods
+ NWDAV5          = $872C    \ LDA #NWDAV5-TT92+6 in ApplyMods
  BR1             = $8882
  DFAULT          = $88F0
  TITLE           = $8920
  CHECK           = $89EB
- CHECK2          = $89F9 \ Unique to Commodore 64
+ CHECK2          = $89F9    \ Unique to Commodore 64
  JAMESON         = $8A0C
- GTL2            = $8A2F \ STA GTL2+1 in ShowDiscMenu/RevertDiscMods
+ GTL2            = $8A2F    \ STA GTL2+1 in ShowDiscMenu/RevertDiscMods
  GTNMEW          = $8A38
  MT26            = $8A5B
  NAMELEN1        = $8BBE
- deviceNumber    = $8C0B \ Unique to Commodore 64
+ deviceNumber    = $8C0B    \ Unique to Commodore 64
  ZEKTRAN         = $8C6D
  TAS2            = $8C8A
- keyLog          = $8D0C \ Unique to Commodore 64, distinct key logger from KL
+ keyLog          = $8D0C    \ Unique to Commodore 64, distinct key log from KL
  RDKEY           = $8D53
  CTRL            = $8E92
  TT217           = $8FEA
@@ -389,18 +389,18 @@ ELIF _C64_VERSION
  TIDY            = $9105
  log             = $9300
  LL9             = $9A86
- LL74            = $9F35 \ STA LL74+16 in ApplyMods/RevertMods
+ LL74            = $9F35    \ STA LL74+16 in ApplyMods/RevertMods
  MV5             = $A434
  PLUT            = $A626
  LOOK1           = $A6BA
  SIGHT           = $A6D4
  TT66            = $A72F
  NOISE           = $A858
- screenSection   = $A8D9 \ Unique to Commodore 64
+ screenSection   = $A8D9    \ Unique to Commodore 64
  DOT             = $B09D
  ECBLB           = $B0FD
  SPBLB           = $B10E
- ShowDashboard   = $B301 \ Unique to Commodore 64
+ ShowDashboard   = $B301    \ Unique to Commodore 64
  SCAN            = $B410
  XX21            = $D000
  K%              = $F900
