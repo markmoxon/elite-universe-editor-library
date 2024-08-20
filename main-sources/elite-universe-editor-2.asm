@@ -1041,13 +1041,15 @@ ENDIF
  LDX #0                 \ Set the high byte of K(3 2 1) to 0
  STX K+2
 
- BIT shiftCtrl          \ IF CTRL is being pressed, jump to move2
- BVS move1
+ BIT shiftCtrl          \ IF CTRL is being pressed, jump to move1 so set the
+ BVS move1              \ delta to 128
 
- BMI move2              \ IF SHIFT is being pressed, jump to move2
+ BMI move2              \ IF SHIFT is being pressed, jump to move2 to set the
+                        \ delta to 16
 
- LDY #1                 \ Set Y = 1 to use as the delta and jump to move3 (this
- BNE move3              \ BNE is effectively a JMP as Y is never zero)
+ LDY #1                 \ Otherwise set Y = 1 to use as the delta and jump to
+ BNE move3              \ move3 (this BNE is effectively a JMP as Y is never
+                        \ zero)
 
 .move1
 
