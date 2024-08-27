@@ -849,7 +849,7 @@ ENDIF
                         \ storing or updating the axes)
 
  JMP ApplyExplosionMod  \ Modify the explosion code so it doesn't update the
-                        \ explosion, returningh from the subroutine using a tail
+                        \ explosion, returning from the subroutine using a tail
                         \ call
 
 \ ******************************************************************************
