@@ -2,9 +2,9 @@
 
 This repository contains a source code library for the Elite Universe Editor. It contains code that is common to all versions of the Universe Editor:
 
-* [BBC Master Elite Universe Editor](https://github.com/markmoxon/master-elite-universe-editor)
-* [6502 Second Processor Elite Universe Editor](https://github.com/markmoxon/6502sp-elite-universe-editor)
-* [Commodore 64 Elite Universe Editor](https://github.com/markmoxon/c64-elite-universe-editor)
+* [BBC Master Elite Universe Editor](https://github.com/markmoxon/elite-universe-editor-bbc-master)
+* [6502 Second Processor Elite Universe Editor](https://github.com/markmoxon/elite-universe-editor-6502-second-processor)
+* [Commodore 64 Elite Universe Editor](https://github.com/markmoxon/elite-universe-editor-commodore-64)
 
 It is also used when building the combined Universe Editor disc and the Elite Compendium:
 
