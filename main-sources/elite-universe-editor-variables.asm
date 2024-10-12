@@ -141,7 +141,7 @@ ELIF _COMPACT
 
 ENDIF
 
- INCLUDE "library-elite-universe-editor/main-sources/elite-universe-editor-macros.asm"
+ INCLUDE "elite-universe-editor-library/main-sources/elite-universe-editor-macros.asm"
 
 ELIF _C64_VERSION
 
@@ -405,6 +405,6 @@ ELIF _C64_VERSION
  XX21            = $D000
  K%              = $F900
 
- INCLUDE "../../library-elite-universe-editor/main-sources/elite-universe-editor-macros.asm"
+ INCLUDE "../../elite-universe-editor-library/main-sources/elite-universe-editor-macros.asm"
 
 ENDIF
